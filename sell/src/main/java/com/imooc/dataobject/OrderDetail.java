@@ -26,5 +26,12 @@ public class OrderDetail {
 	/** 商品名称 */
 	private String productName;
 
-	private BigDecimal product;
+	/** 商品价格 */
+	private BigDecimal productPrice;
+
+	/** 商品数量 */
+	private Integer productQuantity;
+
+	/** 商品图标 */
+	private String productIcon;
 }
