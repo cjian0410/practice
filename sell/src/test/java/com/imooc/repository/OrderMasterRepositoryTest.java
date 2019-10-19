@@ -31,14 +31,14 @@ public class OrderMasterRepositoryTest {
 
 	@Test
 	public void saveTest(){
-		OrderMaster orderMaster = new OrderMaster();
-		orderMaster.setOrderId("3");
-		orderMaster.setBuyerName("Uzi");
-		orderMaster.setBuyerPhone("12345678901");
-		orderMaster.setBuyerAddress("mooc");
-		orderMaster.setBuyerOpenid("110110");
-		orderMaster.setOrderAmount(new BigDecimal(4.5));
-		repository.save(orderMaster);
+//		OrderMaster orderMaster = new OrderMaster();
+//		orderMaster.setOrderId("3");
+//		orderMaster.setBuyerName("Uzi");
+//		orderMaster.setBuyerPhone("12345678901");
+//		orderMaster.setBuyerAddress("mooc");
+//		orderMaster.setBuyerOpenid("110110");
+//		orderMaster.setOrderAmount(new BigDecimal(4.5));
+//		repository.save(orderMaster);
 	}
 
 	@Test
