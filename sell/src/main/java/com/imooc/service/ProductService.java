@@ -1,6 +1,7 @@
 package com.imooc.service;
 
 import com.imooc.dataobject.ProductInfo;
+import com.imooc.dto.CartDTO;
 import org.springframework.stereotype.Service;
 
 import java.awt.print.Pageable;
@@ -24,6 +25,7 @@ public interface ProductService {
 	ProductInfo save(ProductInfo productInfo);
 
 	//加库存
-
+	void increaseStock(List<CartDTO> cartDTOList);
 	//减库存
+	void decreaseStock(List<CartDTO> cartDTOList);
 }
