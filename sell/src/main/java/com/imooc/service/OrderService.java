@@ -1,6 +1,5 @@
 package com.imooc.service;
 
-import com.imooc.dataobject.OrderMaster;
 import com.imooc.dto.OrderDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -10,7 +9,7 @@ import org.springframework.data.domain.Pageable;
  * @version: 2019/10/17
  * @description:
  */
-public interface OrderMasterService {
+public interface OrderService {
 	/** 创建订单 */
 	OrderDTO create(OrderDTO orderDTO);
 

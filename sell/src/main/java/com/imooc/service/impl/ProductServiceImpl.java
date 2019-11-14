@@ -54,11 +54,11 @@ public class ProductServiceImpl implements ProductService {
 		for (CartDTO cartDTO:cartDTOList) {
 			ProductInfo productInfo = repository.getOne(cartDTO.getProductId());
 			if(productInfo==null){
-				throw new SellException(ResultEnum.product_not_exist);
+				throw new SellException(ResultEnum.PRODUCT_NOT_EXIST);
 			}
 			int result = productInfo.getProductStock() - cartDTO.getProductQuantity();
 			if(result<0){
-				throw new SellException(ResultEnum.product_stock_error);
+				throw new SellException(ResultEnum.PRODUCT_STOCK_ERROR);
 			}
 			productInfo.setProductStock(result);
 			repository.save(productInfo);
